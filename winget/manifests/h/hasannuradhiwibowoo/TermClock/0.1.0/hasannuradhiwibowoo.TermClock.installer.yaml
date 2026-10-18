@@ -1,0 +1,18 @@
+PackageIdentifier: hasannuradhiwibowoo.TermClock
+PackageVersion: 0.1.0
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.DotNet.Runtime.8
+InstallerType: zip
+NestedInstallerType: portable
+Commands:
+- termclock
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/hasannuradhiwibowoo/Term-Clock-For-Windows/releases/download/v0.1.0/TermClock-0.1.0-win-x64.zip
+  InstallerSha256: 9CEF75226202DE2323F1FC3AEABE451E885535AEB8E75BB79FE46BC9898E957B
+  NestedInstallerFiles:
+  - RelativeFilePath: termclock.exe
+    PortableCommandAlias: termclock
+ManifestType: installer
+ManifestVersion: 1.10.0

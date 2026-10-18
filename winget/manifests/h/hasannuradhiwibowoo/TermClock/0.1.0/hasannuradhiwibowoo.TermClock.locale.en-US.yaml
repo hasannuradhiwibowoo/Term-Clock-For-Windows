@@ -1,0 +1,19 @@
+PackageIdentifier: hasannuradhiwibowoo.TermClock
+PackageVersion: 0.1.0
+PackageLocale: en-US
+Publisher: hasannuradhiwibowoo
+PublisherUrl: https://github.com/hasannuradhiwibowoo
+PublisherSupportUrl: https://github.com/hasannuradhiwibowoo/Term-Clock-For-Windows/issues
+PackageName: TermClock
+PackageUrl: https://github.com/hasannuradhiwibowoo/Term-Clock-For-Windows
+License: MIT
+LicenseUrl: https://github.com/hasannuradhiwibowoo/Term-Clock-For-Windows/blob/main/LICENSE
+ShortDescription: A colorful digital clock for the Windows terminal.
+Description: A small terminal clock with 12-hour, 24-hour, and UTC modes.
+Tags:
+- clock
+- console
+- powershell
+- terminal
+ManifestType: locale
+ManifestVersion: 1.10.0
