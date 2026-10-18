@@ -15,7 +15,8 @@ After publishing, run `termclock.exe`. Press **Q** or **Esc** to exit.
 
 Options:
 
-- `--24-hour` displays time in 24-hour format.
+- The live clock uses 24-hour format by default.
+- `--12-hour` displays time in 12-hour format.
 - `--utc` displays UTC.
 - `--once` prints the time and exits, which is useful in scripts.
 - `--help` and `--version` print app information.
@@ -28,12 +29,8 @@ Requires the .NET 8 SDK:
 dotnet publish .\TermClock.csproj -c Release -r win-x64 --self-contained false
 ```
 
-The publish folder is `bin\Release\net8.0\win-x64\publish`. The framework-dependent build requires the .NET 8 Runtime on the target computer.
-
-## License
-
-Licensed under the MIT License. See [LICENSE](LICENSE).
+The publish folder is `bin\Release\net8.0\win-x64\publish`. This framework-dependent build is small and requires the .NET 8 Runtime on the target computer. A WinGet manifest can declare that runtime as a package dependency.
 
 ## WinGet
 
-The draft manifests are in `winget/manifests/h/hasannuradhiwibowoo/TermClock/0.1.0`. The installer manifest expects a GitHub Release tagged `v0.1.0` with asset `TermClock-0.1.0-win-x64.zip` and declares the .NET 8 Runtime dependency. The release asset still needs to be uploaded before submitting the manifests to the WinGet community repository.
+The project can be distributed as a portable WinGet package. Before submission, it needs a stable public release URL and a unique package identifier under the publisher's name. The app name and package ID are provisional until chosen.
