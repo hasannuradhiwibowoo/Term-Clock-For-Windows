@@ -1,0 +1,7 @@
+bin/
+obj/
+*.pdb
+/termclock.exe
+/termclock.dll
+/termclock.deps.json
+/termclock.runtimeconfig.json
